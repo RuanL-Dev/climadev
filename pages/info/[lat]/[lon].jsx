@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 import Navbar from '../../../src/components/navbar/Navbar'
 import Container from '../../../src/components/layout/container/Container'
+import ClimaCard from '../../../src/components/climaCard/ClimaCard'
 
 const Body = styled.div`
   background-color: ${props => props.theme.colors.grey};
@@ -22,7 +23,9 @@ const CityName = styled.h2`
   font-size: 60px;
   padding: 0;
   margin: 0;
-  
+`
+const InfoContainer = styled.div`
+
 `
 
 export default function InfoPage() {
@@ -35,6 +38,11 @@ export default function InfoPage() {
             <Text>Previsão do tempo para</Text>
             <CityName>Vitória, ES, Brasil</CityName>
           </Content>
+          <InfoContainer>
+            <ClimaCard />
+            <ClimaCard />
+            <ClimaCard />
+          </InfoContainer>
         </Container>
       </Body>
     </>

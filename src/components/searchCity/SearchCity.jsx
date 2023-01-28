@@ -27,6 +27,7 @@ export default function SearchCity() {
     if (searchText.length >= 3)
     fetchCitiesList()
     else setSuggestions([])
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [searchText])
 
   return (
