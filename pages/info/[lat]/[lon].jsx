@@ -25,7 +25,10 @@ const CityName = styled.h2`
   margin: 0;
 `
 const InfoContainer = styled.div`
-
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
 `
 
 export default function InfoPage() {
