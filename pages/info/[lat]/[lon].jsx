@@ -63,6 +63,7 @@ export default function InfoPage() {
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [lat, lon])
+  console.log(futureInfo)
   return (
     <>
       <Navbar />
