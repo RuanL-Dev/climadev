@@ -7,6 +7,11 @@ const StyledContainer = styled.div`
 
   @media (min-width: 768px) {
     width: 90%;
+    padding: 10px;
+  }
+
+  @media (max-width: 1024px) {
+    padding: 10px;
   }
 
   @media (min-width: 1500px) {
