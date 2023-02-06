@@ -43,7 +43,7 @@ export default function InfoPage() {
 
   const fetchCurrentInfo = async () => {
     const response = await fetch(
-      `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${process.env.NEXT_PUBLIC_OWM_KEY}&units=metric&lang=pt_br`
+      `/api/openweathermap?url=/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&lang=pt_br`
     )
     const json = await response.json()
     setCurrentInfo(json)
@@ -51,7 +51,7 @@ export default function InfoPage() {
 
   const fetchFutureInfo = async () => {
     const response = await fetch(
-      `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${process.env.NEXT_PUBLIC_OWM_KEY}&units=metric&lang=pt_br`
+      `/api/openweathermap?url=/data/2.5/forecast?lat=${lat}&lon=${lon}&units=metric&lang=pt_br`
     )
     const json = await response.json()
     setFutureInfo(json)
